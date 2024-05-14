@@ -16,3 +16,13 @@ if (controlU != Username) {
 }
 
 });
+
+(() => {
+    let gifVideo = document.getElementById('FF14gif');
+    let gifPath = '../IMG/FF14gif.gif'; 
+
+    let img = new Image();
+    img.src = gifPath;
+
+    gifVideo.appendChild(img);
+})();
