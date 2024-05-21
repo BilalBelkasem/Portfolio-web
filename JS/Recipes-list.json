@@ -1,0 +1,11 @@
+{
+    "recipes": [
+        {
+            "name": "maple syrup",
+            "ingredients": ["Maple sap", "Fire shard"],
+            "prepTime": 1,
+            "difficulty": "Low",
+            "instructions": ["Use level 1 skills"]
+        }
+    ]
+}

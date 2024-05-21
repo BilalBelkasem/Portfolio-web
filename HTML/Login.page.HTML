@@ -4,35 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel = "stylesheet" href = "../CSS/Login.page.css">
+    <link rel="stylesheet" href="../CSS/Login.page.css">
     <link rel="icon" href="../IMG/favicon.ico">
-    
+    <style>
+        
+        .crystal-left,
+        .crystal-right {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle at center, #fff, #00ffff);
+            border-radius: 50%;
+            animation: sparkle 2s linear infinite;
+            margin-top: 20px; 
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .crystal-left {
+            left: 50px; 
+        }
+
+        .crystal-right {
+            right: 50px; 
+        }
+
+        @keyframes sparkle {
+            0% { box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff, 0 0 70px #00ffff; }
+            100% { box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 90px #00ffff, 0 0 100px #00ffff; }
+        }
+    </style>
 </head>
 <body>
+    <div class="Login">
+        <form>
+            <div class="username-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="password-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="Login-button">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+
     
+    <div class="crystal-left"></div>
+    <div class="crystal-right"></div>
 
-<div class="Login">
-    <form>
-        <div class="username-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-
-        <div class="password-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-
-        <div class="Login-button">
-             <input type="submit" value="Login">
-        </div>
-    </form>
-</div>
-
-<div class="FF14gif">
+    
+    <div class="FF14gif">
         
-</div>
+    </div>
 
-<script src="../JS/Login.page.mjs"></script>
+    <script src="../JS/Login.page.mjs"></script>
 </body>
 </html>

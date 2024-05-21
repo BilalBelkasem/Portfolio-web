@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking recipes</title>
+    <link rel="stylesheet" href="../CSS/Cooking.recipes.Css.css">
+</head>
+<body>
+    <header id="Header">
+
+    </header>
+
+
+    <h1>Cooking recipes</h1>
+    <p>Here you can add progressively the cooking recipes that you learn in game</p>
+
+    <main>
+        <h1>Add Recipe</h1>
+        <form id="recipeForm">
+            <div>
+                <label for="recipeName">Name:</label>
+                <input type="text" id="recipeName" name="recipeName" required>
+            </div>
+            <div>
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
+            </div>
+            <div>
+                <label for="prepTime">Preparing time (tho in FF it's mostly instant):</label>
+                <input type="number" id="prepTime" name="prepTime" required>
+            </div>
+            <div>
+                <label for="difficulty">Level required:</label>
+                <select id="difficulty" name="difficulty" required>
+                    <option value="Low">Low</option>
+                    <option value="Mid">Mid</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+            <div>
+                <label for="instructions">Which skill using while cooking:</label>
+                <textarea id="instructions" name="instructions" rows="10" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Add</button>
+            </div>
+        </form>
+        <h2>Saved Recipes</h2>
+        <ul id="recipeList"></ul>
+    </main>
+    
+    <script src="../JS/Cooking.recipes.mjs"></script>
+    <script src="../JS/Header.mjs"></script>
+</body>
+</html>

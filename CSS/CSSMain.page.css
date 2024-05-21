@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.WeaponsGuide, .Cooking {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.WeaponsGuide h2, .Cooking h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.WeaponsGuide p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Styles for the header */
+#Header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
